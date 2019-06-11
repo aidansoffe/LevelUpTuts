@@ -1,0 +1,3 @@
+rootProject.name = 'hpmovies'
+
+include ':app'
