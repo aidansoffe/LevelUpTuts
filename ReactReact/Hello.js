@@ -5,7 +5,8 @@ export default class Hello extends Component{
   render () {
     return(
       <View>
-        <Text style={styles.hello}> Hello from Hello.js</Text>
+        <Text style={styles.hello}>{this.props.make}</Text>
+        <Text style={styles.hello}>{this.props.model}</Text>
       </View>
 
     );
@@ -14,8 +15,10 @@ export default class Hello extends Component{
 
 const styles=StyleSheet.create({
   hello: {
-    color: '#ffffff',
-    backgroundColor: '#00ff00',
-
+    color: '#0000cd',
+    // backgroundColor: 'lightblue',
+    fontSize: 30,
+    padding: 15,
+    
   }
 })
